@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
+```
+
+Click **Commit changes**. Vercel will auto-redeploy in ~30 seconds and your site will load.
+
+If it still shows 404 after that, also check that your `index.html` is in the **root of the repo** (not inside a folder). It should look like this in GitHub:
+```
+karat-farmer/
+├── index.html
+└── vercel.json
