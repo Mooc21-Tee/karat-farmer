@@ -611,9 +611,9 @@
 
   // ── BACKEND CONFIG ────────────────────────────────────────────
   // Your Vultr backend URL — change this after deploying to Vultr
-  const BACKEND = 'http://144.202.2.99:4000';
-  const WS_BACKEND = BACKEND.replace('http://', 'ws://').replace('https://', 'wss://');
-
+const BACKEND = '';
+const WS_BACKEND = 'wss://karat-farmer-docm.vercel.app';
+  
   // ── API HELPERS ───────────────────────────────────────────────
   async function api(url, body) {
     const r = await fetch(BACKEND + url, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body), credentials:'include' });
